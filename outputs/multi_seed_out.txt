@@ -1,0 +1,81 @@
+======================================================================
+[0] Data: 60 calibration windows, 360 selection (seeds 1-6), 360 evaluation (seeds 7-12)
+[0] Reproduction check (reference values: S1 FPR 0.0375/power 0.9847, CUSUM k=0.5 0.011/1.000, EWMA l=0.2 0.028/1.000)
+    S1_check     FPR 0.0375  pw@1.6 0.9847
+    CUSUM k=0.5  FPR 0.0111  pw@1.6 1.0000
+    EWMA l=0.2   FPR 0.0278  pw@1.6 1.0000
+
+[1] Normal-window FPR and mean power on the selection seeds (1-6) for each statistic (manuscript-procedure limit: calibration P99)
+method          FPR_sel    meanPow
+S1_check         0.0472     0.7928
+CUSUM k=0.5      0.0083     0.8900
+EWMA l=0.2       0.0333     0.9017
+Fixed settings -> CUSUM k=0.5 , EWMA l=0.2
+
+[2] Evaluation seeds 7-12, decision limit = calibration-window P99 (manuscript procedure)
+method             FPR   m*(>=0.95)
+ S1_check       0.0278   1.4
+ CUSUM k=0.5    0.0139   1.2
+ EWMA l=0.2     0.0222   1.2
+ ±3σ rule       0.1472
+
+[3] Matched-FPR condition (limit = quantile of the normal statistics of seeds 1-6 that leaves 5% above it -> target FPR=0.05), evaluation seeds 7-12
+method             FPR   m*(>=0.95)
+ S1_check       0.0417   1.4
+ CUSUM k=0.5    0.0750   1.0
+ EWMA l=0.2     0.0500   1.2
+ ±3σ rule       0.1472
+
+[4] Bootstrap of the 60 calibration windows (B=2000): effect of the uncertainty of the P99 limit on the FPR on evaluation seeds 7-12
+method         FPR median [95%PI]        
+S1_check       0.028 [0.019, 0.050]      
+CUSUM k=0.5    0.014 [0.008, 0.075]      
+EWMA l=0.2     0.028 [0.014, 0.056]      
+
+[5] Level-shift check: constant +0.8σ shift (evaluation seeds 7-12, manuscript-procedure limit)
+S1_check       detection rate 0.028
+CUSUM k=0.5    detection rate 0.997
+EWMA l=0.2     detection rate 0.994
+
+[6] Anomaly rate in process-disturbance windows (16 windows per seed)
+disturbance method            k/n   rate  range over seeds
+IDV(1 )   S1_check        35/192 0.182  0.06~0.31
+IDV(1 )   CUSUM k=0.5     24/192 0.125  0.06~0.38
+IDV(1 )   EWMA l=0.2      26/192 0.135  0.00~0.38
+IDV(1 )   S3_check        57/192 0.297  0.13~0.38
+IDV(6 )   S1_check        20/192 0.104  0.00~0.19
+IDV(6 )   CUSUM k=0.5    117/192 0.609  0.00~0.94
+IDV(6 )   EWMA l=0.2      94/192 0.490  0.00~1.00
+IDV(6 )   S3_check       192/192 1.000  1.00~1.00
+IDV(13)   S1_check        82/192 0.427  0.13~0.69
+IDV(13)   CUSUM k=0.5     95/192 0.495  0.06~0.94
+IDV(13)   EWMA l=0.2      88/192 0.458  0.06~0.88
+IDV(13)   S3_check       183/192 0.953  0.69~1.00
+
+[7] Isolation matrix (evaluation seeds 7-12, manuscript-procedure limit). Only the S1 check statistic is replaced; the S2/S3 checks are unchanged
+
+S1 statistic = S1_check
+  S1_drift     S1_check=0.989  S2_check=0.000  S3_check=0.008
+  S2_omission  S1_check=0.028  S2_check=1.000  S3_check=0.008
+  S3_swap      S1_check=0.028  S2_check=0.000  S3_check=1.000
+  clean(FPR)   S1_check=0.028  S2_check=0.000  S3_check=0.008
+
+S1 statistic = CUSUM k=0.5
+  S1_drift     S1_check=1.000  S2_check=0.000  S3_check=0.008
+  S2_omission  S1_check=0.014  S2_check=1.000  S3_check=0.008
+  S3_swap      S1_check=0.014  S2_check=0.000  S3_check=1.000
+  clean(FPR)   S1_check=0.014  S2_check=0.000  S3_check=0.008
+
+S1 statistic = EWMA l=0.2
+  S1_drift     S1_check=1.000  S2_check=0.000  S3_check=0.008
+  S2_omission  S1_check=0.022  S2_check=1.000  S3_check=0.008
+  S3_swap      S1_check=0.022  S2_check=0.000  S3_check=1.000
+  clean(FPR)   S1_check=0.022  S2_check=0.000  S3_check=0.008
+
+[8] Seed-level aggregation: paired difference of the per-seed rates (16 windows) (other method - S1_check), all seeds 1-12
+IDV(1 ) CUSUM k=0.5  mean diff -0.057  95%CI (seed bootstrap) [-0.083, -0.026]  other>S1 in 1 seeds, other<S1 in 9 seeds, sign test p=0.021
+IDV(1 ) EWMA l=0.2   mean diff -0.047  95%CI (seed bootstrap) [-0.078, -0.010]  other>S1 in 2 seeds, other<S1 in 9 seeds, sign test p=0.065
+IDV(6 ) CUSUM k=0.5  mean diff +0.505  95%CI (seed bootstrap) [+0.292, +0.703]  other>S1 in 9 seeds, other<S1 in 1 seeds, sign test p=0.021
+IDV(6 ) EWMA l=0.2   mean diff +0.385  95%CI (seed bootstrap) [+0.161, +0.615]  other>S1 in 8 seeds, other<S1 in 3 seeds, sign test p=0.227
+IDV(13) CUSUM k=0.5  mean diff +0.068  95%CI (seed bootstrap) [-0.068, +0.203]  other>S1 in 6 seeds, other<S1 in 5 seeds, sign test p=1.000
+IDV(13) EWMA l=0.2   mean diff +0.031  95%CI (seed bootstrap) [-0.073, +0.135]  other>S1 in 5 seeds, other<S1 in 4 seeds, sign test p=1.000

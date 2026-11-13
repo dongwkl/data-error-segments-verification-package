@@ -1,0 +1,310 @@
+Ignoring -m untitled.
+temain_mod-smart.pyf defines temain_mod to be the modulename.
+/usr/local/lib/python3.11/dist-packages/numpy/f2py/f2py2e.py:739: VisibleDeprecationWarning: 
+distutils has been deprecated since NumPy 1.26.x
+Use the Meson backend instead, or generate wrappers without -c and use a custom build script
+  builder = build_backend(
+running build
+running config_cc
+INFO: unifying config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifying config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "temain_mod" sources
+creating /tmp/tmp96y9c75g/src.linux-x86_64-3.11
+INFO: f2py options: []
+INFO: f2py: temain_mod-smart.pyf
+Reading fortran codes...
+	Reading file 'temain_mod-smart.pyf' (format:free)
+Post-processing...
+	Block: temain_mod
+			Block: temain
+			Block: contrl1
+			Block: contrl2
+			Block: contrl3
+			Block: contrl4
+			Block: contrl5
+			Block: contrl6
+			Block: contrl7
+			Block: contrl8
+			Block: contrl9
+			Block: contrl10
+			Block: contrl11
+			Block: contrl13
+			Block: contrl14
+			Block: contrl15
+			Block: contrl16
+			Block: contrl17
+			Block: contrl18
+			Block: contrl19
+			Block: contrl20
+			Block: contrl22
+			Block: intgtr
+			Block: conshand
+			Block: tefunc
+			Block: teinit
+			Block: tesub1
+			Block: tesub2
+			Block: tesub3
+			Block: tesub4
+			Block: tesub5
+			Block: tesub6
+			Block: tesub7
+			Block: tesub8
+Applying post-processing hooks...
+  character_backward_compatibility_hook
+Post-processing (stage 2)...
+Building modules...
+    Building module "temain_mod"...
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "temain"...
+          xdata = temain(npts,nx,idata,verbose)
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl1"...
+          contrl1()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl2"...
+          contrl2()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl3"...
+          contrl3()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl4"...
+          contrl4()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl5"...
+          contrl5()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl6"...
+          contrl6()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl7"...
+          contrl7()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl8"...
+          contrl8()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl9"...
+          contrl9()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl10"...
+          contrl10()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl11"...
+          contrl11()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl13"...
+          contrl13()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl14"...
+          contrl14()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl15"...
+          contrl15()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl16"...
+          contrl16()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl17"...
+          contrl17()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl18"...
+          contrl18()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl19"...
+          contrl19()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl20"...
+          contrl20()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "contrl22"...
+          contrl22()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "intgtr"...
+          intgtr(time,deltat,yy,yp,[nn])
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "conshand"...
+          conshand()
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "tefunc"...
+          tefunc(time,yy,yp,[nn])
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "teinit"...
+          teinit(time,yy,yp,[nn])
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "tesub1"...
+          tesub1(z,t,h,ity)
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "tesub2"...
+          tesub2(z,t,h,ity)
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "tesub3"...
+          tesub3(z,t,dh,ity)
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "tesub4"...
+          tesub4(x,t,r)
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "tesub5"...
+          tesub5(s,sp,adist,bdist,cdist,ddist,tlast,tnext,hspan,hzero,sspan,szero,spspan,idvflag)
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+        Constructing wrapper function "tesub6"...
+          tesub6(std,x)
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+		Creating wrapper for Fortran function "tesub7"("tesub7")...
+        Constructing wrapper function "tesub7"...
+          tesub7 = tesub7(i)
+    Generating possibly empty wrappers"
+    Maybe empty "temain_mod-f2pywrappers.f"
+		Creating wrapper for Fortran function "tesub8"("tesub8")...
+        Constructing wrapper function "tesub8"...
+          tesub8 = tesub8(i,t)
+		Constructing COMMON block support for "pv"...
+		  xmeas,xmv
+		Constructing COMMON block support for "dvec"...
+		  idv
+		Constructing COMMON block support for "ctrlall"...
+		  setpt,deltat
+		Constructing COMMON block support for "flag6"...
+		  flag
+		Constructing COMMON block support for "ctrl1"...
+		  gain1,errold1
+		Constructing COMMON block support for "ctrl2"...
+		  gain2,errold2
+		Constructing COMMON block support for "ctrl3"...
+		  gain3,errold3
+		Constructing COMMON block support for "ctrl4"...
+		  gain4,errold4
+		Constructing COMMON block support for "ctrl5"...
+		  gain5,taui5,errold5
+		Constructing COMMON block support for "ctrl6"...
+		  gain6,errold6
+		Constructing COMMON block support for "ctrl7"...
+		  gain7,errold7
+		Constructing COMMON block support for "ctrl8"...
+		  gain8,errold8
+		Constructing COMMON block support for "ctrl9"...
+		  gain9,errold9
+		Constructing COMMON block support for "ctrl10"...
+		  gain10,taui10,errold10
+		Constructing COMMON block support for "ctrl11"...
+		  gain11,taui11,errold11
+		Constructing COMMON block support for "ctrl13"...
+		  gain13,taui13,errold13
+		Constructing COMMON block support for "ctrl14"...
+		  gain14,taui14,errold14
+		Constructing COMMON block support for "ctrl15"...
+		  gain15,taui15,errold15
+		Constructing COMMON block support for "ctrl16"...
+		  gain16,taui16,errold16
+		Constructing COMMON block support for "ctrl17"...
+		  gain17,taui17,errold17
+		Constructing COMMON block support for "ctrl18"...
+		  gain18,taui18,errold18
+		Constructing COMMON block support for "ctrl19"...
+		  gain19,taui19,errold19
+		Constructing COMMON block support for "ctrl20"...
+		  gain20,taui20,errold20
+		Constructing COMMON block support for "ctrl22"...
+		  gain22,taui22,errold22
+		Constructing COMMON block support for "teproc"...
+		  uclr,ucvr,utlr,utvr,xlr,xvr,etr,esr,tcr,tkr,dlr,vlr,vvr,vtr,ptr,ppr,crxr,rr,rh,fwr,twr,qur,hwr,uar,ucls,ucvs,utls,utvs,xls,xvs,ets,ess,tcs,tks,dls,vls,vvs,vts,pts,pps,fws,tws,qus,hws,uclc,utlc,xlc,etc,esc,tcc,dlc,vlc,vtc,quc,ucvv,utvv,xvv,etv,esv,tcv,tkv,vtv,ptv,vcv,vrng,vtau,ftm,fcm,xst,xmws,hst,tst,sfr,cpflmx,cpprmx,cpdh,tcwr,tcws,htr,agsp,xdel,xns,tgas,tprod,vst,ivst
+		Constructing COMMON block support for "wlk"...
+		  adist,bdist,cdist,ddist,tlast,tnext,hspan,hzero,sspan,szero,spspan,idvwlk
+		Constructing COMMON block support for "const"...
+		  avp,bvp,cvp,ah,bh,ch,ag,bg,cg,av,ad,bd,cd,xmw
+		Constructing COMMON block support for "randsd"...
+		  g
+    Wrote C/API module "temain_mod" to file "/tmp/tmp96y9c75g/src.linux-x86_64-3.11/temain_modmodule.c"
+    Fortran 77 wrappers are saved to "/tmp/tmp96y9c75g/src.linux-x86_64-3.11/temain_mod-f2pywrappers.f"
+INFO:   adding '/tmp/tmp96y9c75g/src.linux-x86_64-3.11/fortranobject.c' to sources.
+INFO:   adding '/tmp/tmp96y9c75g/src.linux-x86_64-3.11' to include_dirs.
+copying /usr/local/lib/python3.11/dist-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmp96y9c75g/src.linux-x86_64-3.11
+copying /usr/local/lib/python3.11/dist-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmp96y9c75g/src.linux-x86_64-3.11
+INFO:   adding '/tmp/tmp96y9c75g/src.linux-x86_64-3.11/temain_mod-f2pywrappers.f' to sources.
+INFO: build_src: building npy-pkg config files
+/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build_ext
+INFO: customize UnixCCompiler
+INFO: customize UnixCCompiler using build_ext
+INFO: get_default_fcompiler: matching types: '['arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor', 'fujitsu']'
+INFO: customize ArmFlangCompiler
+WARN: Could not locate executable armflang
+INFO: customize Gnu95FCompiler
+INFO: Found executable /usr/bin/gfortran
+INFO: customize Gnu95FCompiler
+INFO: customize Gnu95FCompiler using build_ext
+INFO: building 'temain_mod' extension
+INFO: compiling C sources
+INFO: C compiler: x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC
+
+creating /tmp/tmp96y9c75g/tmp
+creating /tmp/tmp96y9c75g/tmp/tmp96y9c75g
+creating /tmp/tmp96y9c75g/tmp/tmp96y9c75g/src.linux-x86_64-3.11
+INFO: compile options: '-DNPY_DISABLE_OPTIMIZATION=1 -I/tmp/tmp96y9c75g/src.linux-x86_64-3.11 -I/usr/local/lib/python3.11/dist-packages/numpy/_core/include -I/usr/include/python3.11 -c'
+INFO: x86_64-linux-gnu-gcc: /tmp/tmp96y9c75g/src.linux-x86_64-3.11/temain_modmodule.c
+INFO: x86_64-linux-gnu-gcc: /tmp/tmp96y9c75g/src.linux-x86_64-3.11/fortranobject.c
+INFO: compiling Fortran sources
+INFO: Fortran f77 compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /usr/bin/gfortran -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran fix compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC -O3 -funroll-loops
+INFO: compile options: '-I/tmp/tmp96y9c75g/src.linux-x86_64-3.11 -I/usr/local/lib/python3.11/dist-packages/numpy/_core/include -I/usr/include/python3.11 -c'
+INFO: gfortran:f77: temain_mod.f
+INFO: gfortran:f77: teprob.f
+teprob.f:1439:72:
+
+ 1439 |  250  IF(DABS(DT).LT.1.D-12)GO TO 300
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 250 at (1)
+teprob.f:1543:72:
+
+ 1543 |     2 X=X+TESUB7(I)
+      |                                                                        1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 2 at (1)
+INFO: gfortran:f77: /tmp/tmp96y9c75g/src.linux-x86_64-3.11/temain_mod-f2pywrappers.f
+INFO: /usr/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmp96y9c75g/tmp/tmp96y9c75g/src.linux-x86_64-3.11/temain_modmodule.o /tmp/tmp96y9c75g/tmp/tmp96y9c75g/src.linux-x86_64-3.11/fortranobject.o /tmp/tmp96y9c75g/temain_mod.o /tmp/tmp96y9c75g/teprob.o /tmp/tmp96y9c75g/tmp/tmp96y9c75g/src.linux-x86_64-3.11/temain_mod-f2pywrappers.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/x86_64-linux-gnu -lgfortran -o ./temain_mod.cpython-311-x86_64-linux-gnu.so
+Removing build directory /tmp/tmp96y9c75g
